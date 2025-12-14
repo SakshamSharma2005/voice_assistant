@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: govt-scheme-navigator-api
+    runtime: python
+    plan: starter
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 4
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: LOG_LEVEL
+        value: INFO
+      - key: HOST
+        value: 0.0.0.0
+      - key: MAX_SESSIONS
+        value: 10000
+      - key: SESSION_TIMEOUT_MINUTES
+        value: 30

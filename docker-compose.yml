@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: scheme_navigator_api
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URL=mongodb://mongo:27017
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    env_file:
+      - .env
+    volumes:
+      - ./storage:/app/storage
+      - ./logs:/app/logs
+      - ./app:/app/app  # For development hot-reload
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - scheme_network
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:7.0
+    container_name: scheme_navigator_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - scheme_network
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: scheme_navigator_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - scheme_network
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
+  redis_data:
+
+networks:
+  scheme_network:
+    driver: bridge

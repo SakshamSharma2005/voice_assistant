@@ -1,0 +1,45 @@
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.10.4
+pydantic-settings==2.1.0
+
+# AI/LLM Integration
+google-generativeai==0.3.2
+google-cloud-speech==2.24.0
+google-cloud-texttospeech==2.16.1
+
+# Speech Processing
+gtts==2.5.0
+pydub==0.25.1
+speechrecognition==3.10.1
+
+# Database
+motor==3.3.2  # Async MongoDB driver
+pymongo==4.6.1
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+
+# Caching & Session
+redis==5.0.1
+aioredis==2.0.1
+
+# API & Networking
+httpx==0.26.0
+aiofiles==23.2.1
+python-multipart==0.0.6
+
+# Language Processing
+langdetect==1.0.9
+indic-transliteration==2.3.41
+
+# Utilities
+python-dotenv==1.0.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+tenacity==8.2.3
+
+# Development & Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+black==23.12.1

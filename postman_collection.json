@@ -1,0 +1,237 @@
+{
+  "info": {
+    "name": "Government Scheme Navigator API",
+    "description": "Voice-Assisted API for navigating government schemes in India",
+    "version": "1.0.0"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000/api/v1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Session Management",
+      "item": [
+        {
+          "name": "Start Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"language\": \"hi\",\n  \"user_context\": {\n    \"state\": \"Uttar Pradesh\",\n    \"occupation\": \"farmer\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/session/start",
+              "host": ["{{base_url}}"],
+              "path": ["session", "start"]
+            }
+          }
+        },
+        {
+          "name": "Get Session",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/session/:session_id",
+              "host": ["{{base_url}}"],
+              "path": ["session", ":session_id"],
+              "variable": [
+                {
+                  "key": "session_id",
+                  "value": "sess_abc123"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chat & Query",
+      "item": [
+        {
+          "name": "Chat Query - Hindi",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"मुझे किसानों के लिए कोई योजना बताओ\",\n  \"language\": \"hi\",\n  \"user_context\": {\n    \"state\": \"Uttar Pradesh\",\n    \"occupation\": \"farmer\",\n    \"age\": 45\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/chat/query",
+              "host": ["{{base_url}}"],
+              "path": ["chat", "query"]
+            }
+          }
+        },
+        {
+          "name": "Chat Query - English",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"Tell me about health insurance schemes\",\n  \"language\": \"en\",\n  \"user_context\": {\n    \"state\": \"Maharashtra\",\n    \"age\": 35\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/chat/query",
+              "host": ["{{base_url}}"],
+              "path": ["chat", "query"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Voice Processing",
+      "item": [
+        {
+          "name": "Text-to-Speech",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"text\": \"आपके लिए तीन योजनाएं मिली हैं\",\n  \"language\": \"hi\",\n  \"voice_gender\": \"female\",\n  \"speech_rate\": 0.9\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/voice/synthesize",
+              "host": ["{{base_url}}"],
+              "path": ["voice", "synthesize"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Schemes",
+      "item": [
+        {
+          "name": "Search Schemes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"age\": 45,\n  \"occupation\": \"farmer\",\n  \"state\": \"Uttar Pradesh\",\n  \"category\": [\"agriculture\"],\n  \"income\": 150000\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/schemes/search",
+              "host": ["{{base_url}}"],
+              "path": ["schemes", "search"]
+            }
+          }
+        },
+        {
+          "name": "Get Scheme by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/schemes/PM-KISAN-001",
+              "host": ["{{base_url}}"],
+              "path": ["schemes", "PM-KISAN-001"]
+            }
+          }
+        },
+        {
+          "name": "List All Schemes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/schemes?skip=0&limit=20",
+              "host": ["{{base_url}}"],
+              "path": ["schemes"],
+              "query": [
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Eligibility",
+      "item": [
+        {
+          "name": "Check Eligibility",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"user_profile\": {\n    \"age\": 45,\n    \"gender\": \"male\",\n    \"state\": \"Uttar Pradesh\",\n    \"occupation\": \"farmer\",\n    \"annual_income\": 150000,\n    \"education\": \"10th\",\n    \"is_farmer\": true,\n    \"land_size_acres\": 2.5,\n    \"has_aadhaar\": true,\n    \"has_bank_account\": true,\n    \"preferred_language\": \"hi\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/eligibility/check",
+              "host": ["{{base_url}}"],
+              "path": ["eligibility", "check"]
+            }
+          }
+        },
+        {
+          "name": "Quick Check",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"age\": 35,\n  \"gender\": \"female\",\n  \"state\": \"Maharashtra\",\n  \"occupation\": \"self_employed\",\n  \"annual_income\": 80000,\n  \"has_aadhaar\": true,\n  \"has_bank_account\": true,\n  \"preferred_language\": \"hi\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/eligibility/quick-check",
+              "host": ["{{base_url}}"],
+              "path": ["eligibility", "quick-check"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1020 @@
+[
+  {
+    "scheme_id": "PM-KISAN-001",
+    "name": {
+      "en": "PM Kisan Samman Nidhi",
+      "hi": "प्रधानमंत्री किसान सम्मान निधि"
+    },
+    "description": {
+      "en": "Income support scheme providing financial assistance to farmer families across India with cultivable land.",
+      "hi": "भारत भर में खेती योग्य भूमि वाले किसान परिवारों को वित्तीय सहायता प्रदान करने वाली आय सहायता योजना।"
+    },
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "category": ["agriculture", "financial_inclusion"],
+    "eligibility": {
+      "age_min": 18,
+      "income_limit": null,
+      "occupation": ["farmer"],
+      "states": ["all"],
+      "land_ownership": true,
+      "bank_account": true
+    },
+    "benefits": {
+      "amount": 6000,
+      "frequency": "yearly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "₹6000 per year in three equal installments of ₹2000 each",
+        "hi": "प्रति वर्ष ₹6000, तीन समान किस्तों में ₹2000 प्रत्येक"
+      }
+    },
+    "documents_required": ["aadhaar", "land_records", "bank_account", "mobile_number"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Visit PM Kisan portal or nearest CSC center",
+          "hi": "पीएम किसान पोर्टल या निकटतम सीएससी केंद्र पर जाएं"
+        },
+        "online": true
+      },
+      {
+        "step_number": 2,
+        "description": {
+          "en": "Register with Aadhaar number and land details",
+          "hi": "आधार नंबर और भूमि विवरण के साथ पंजीकरण करें"
+        },
+        "online": true
+      },
+      {
+        "step_number": 3,
+        "description": {
+          "en": "Upload required documents and submit application",
+          "hi": "आवश्यक दस्तावेज अपलोड करें और आवेदन जमा करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "155261",
+    "website": "https://pmkisan.gov.in",
+    "launch_date": "2018-12-01",
+    "is_active": true
+  },
+  {
+    "scheme_id": "AYUSHMAN-BHARAT-002",
+    "name": {
+      "en": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana",
+      "hi": "आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना"
+    },
+    "description": {
+      "en": "World's largest health insurance scheme providing coverage of ₹5 lakh per family per year for secondary and tertiary care hospitalization.",
+      "hi": "द्वितीयक और तृतीयक देखभाल अस्पताल में भर्ती के लिए प्रति परिवार प्रति वर्ष ₹5 लाख का कवरेज प्रदान करने वाली विश्व की सबसे बड़ी स्वास्थ्य बीमा योजना।"
+    },
+    "ministry": "Ministry of Health and Family Welfare",
+    "category": ["healthcare", "social_security"],
+    "eligibility": {
+      "income_limit": 100000,
+      "states": ["all"],
+      "bpl_card": false,
+      "ration_card": "priority"
+    },
+    "benefits": {
+      "amount": 500000,
+      "frequency": "yearly",
+      "type": "insurance",
+      "description": {
+        "en": "Health cover of ₹5 lakh per family per year for hospitalization",
+        "hi": "अस्पताल में भर्ती के लिए प्रति परिवार प्रति वर्ष ₹5 लाख का स्वास्थ्य कवर"
+      }
+    },
+    "documents_required": ["aadhaar", "ration_card", "family_id"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Check eligibility on Ayushman Bharat website using mobile number",
+          "hi": "मोबाइल नंबर का उपयोग करके आयुष्मान भारत वेबसाइट पर पात्रता की जांच करें"
+        },
+        "online": true
+      },
+      {
+        "step_number": 2,
+        "description": {
+          "en": "Visit nearest empanelled hospital or CSC for card generation",
+          "hi": "कार्ड बनाने के लिए निकटतम सूचीबद्ध अस्पताल या सीएससी पर जाएं"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "14555",
+    "website": "https://pmjay.gov.in",
+    "launch_date": "2018-09-23",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PM-AWAS-003",
+    "name": {
+      "en": "Pradhan Mantri Awas Yojana - Gramin",
+      "hi": "प्रधानमंत्री आवास योजना - ग्रामीण"
+    },
+    "description": {
+      "en": "Housing scheme to provide pucca house with basic amenities to all houseless and living in kutcha houses in rural areas.",
+      "hi": "ग्रामीण क्षेत्रों में बेघर और कच्चे मकानों में रहने वाले सभी लोगों को बुनियादी सुविधाओं के साथ पक्का मकान प्रदान करने के लिए आवास योजना।"
+    },
+    "ministry": "Ministry of Rural Development",
+    "category": ["housing", "social_security"],
+    "eligibility": {
+      "age_min": 18,
+      "income_limit": 100000,
+      "occupation": ["laborer", "farmer", "other"],
+      "states": ["all"],
+      "land_ownership": false
+    },
+    "benefits": {
+      "amount": 120000,
+      "frequency": "one-time",
+      "type": "subsidy",
+      "description": {
+        "en": "Financial assistance of ₹1.20 lakh in plain areas and ₹1.30 lakh in hilly areas",
+        "hi": "मैदानी क्षेत्रों में ₹1.20 लाख और पहाड़ी क्षेत्रों में ₹1.30 लाख की वित्तीय सहायता"
+      },
+      "additional_benefits": ["toilet", "lpg_connection", "electricity"]
+    },
+    "documents_required": ["aadhaar", "bpl_card", "bank_account", "land_documents"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply through Gram Panchayat or online at pmayg.nic.in",
+          "hi": "ग्राम पंचायत के माध्यम से या pmayg.nic.in पर ऑनलाइन आवेदन करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "1800-11-6446",
+    "website": "https://pmayg.nic.in",
+    "launch_date": "2016-04-01",
+    "is_active": true
+  },
+  {
+    "scheme_id": "MGNREGA-004",
+    "name": {
+      "en": "Mahatma Gandhi National Rural Employment Guarantee Act",
+      "hi": "महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार गारंटी अधिनियम"
+    },
+    "description": {
+      "en": "Guarantees 100 days of wage employment in a financial year to rural households whose adult members volunteer to do unskilled manual work.",
+      "hi": "उन ग्रामीण परिवारों को एक वित्तीय वर्ष में 100 दिनों के वेतन रोजगार की गारंटी देता है जिनके वयस्क सदस्य अकुशल शारीरिक कार्य करने के लिए स्वेच्छा से आते हैं।"
+    },
+    "ministry": "Ministry of Rural Development",
+    "category": ["employment", "social_security"],
+    "eligibility": {
+      "age_min": 18,
+      "occupation": ["laborer", "unemployed", "farmer"],
+      "states": ["all"],
+      "bank_account": true
+    },
+    "benefits": {
+      "amount": 26100,
+      "frequency": "yearly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "Minimum wage for 100 days of work (varies by state, avg ₹261/day)",
+        "hi": "100 दिनों के काम के लिए न्यूनतम मजदूरी (राज्य के अनुसार भिन्न, औसत ₹261/दिन)"
+      }
+    },
+    "documents_required": ["job_card", "bank_account", "aadhaar"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply for Job Card at Gram Panchayat",
+          "hi": "ग्राम पंचायत में जॉब कार्ड के लिए आवेदन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-345-22-44",
+    "website": "https://nrega.nic.in",
+    "launch_date": "2005-02-02",
+    "is_active": true
+  },
+  {
+    "scheme_id": "SUKANYA-SAMRIDDHI-005",
+    "name": {
+      "en": "Sukanya Samriddhi Yojana",
+      "hi": "सुकन्या समृद्धि योजना"
+    },
+    "description": {
+      "en": "Small deposit scheme for girl child with attractive interest rate and tax benefits.",
+      "hi": "आकर्षक ब्याज दर और कर लाभ के साथ बालिकाओं के लिए छोटी जमा योजना।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["women_welfare", "financial_inclusion"],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 10,
+      "gender": "female",
+      "states": ["all"],
+      "bank_account": false
+    },
+    "benefits": {
+      "amount": null,
+      "frequency": "maturity",
+      "type": "service",
+      "description": {
+        "en": "8% interest rate with tax benefits, maturity at 21 years",
+        "hi": "कर लाभ के साथ 8% ब्याज दर, 21 वर्ष की आयु पर परिपक्वता"
+      }
+    },
+    "documents_required": ["birth_certificate", "parent_id", "address_proof"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Open account at any post office or authorized bank",
+          "hi": "किसी भी डाकघर या अधिकृत बैंक में खाता खोलें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-11-2011",
+    "website": "https://www.indiapost.gov.in",
+    "launch_date": "2015-01-22",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PM-SYM-006",
+    "name": {
+      "en": "Pradhan Mantri Shram Yogi Maandhan",
+      "hi": "प्रधानमंत्री श्रम योगी मानधन"
+    },
+    "description": {
+      "en": "Pension scheme for unorganized workers ensuring old age protection with monthly pension of ₹3000 after 60 years.",
+      "hi": "60 वर्ष के बाद ₹3000 की मासिक पेंशन के साथ वृद्धावस्था संरक्षण सुनिश्चित करने वाली असंगठित श्रमिकों के लिए पेंशन योजना।"
+    },
+    "ministry": "Ministry of Labour and Employment",
+    "category": ["social_security", "employment"],
+    "eligibility": {
+      "age_min": 18,
+      "age_max": 40,
+      "income_limit": 15000,
+      "occupation": ["laborer", "self_employed"],
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 3000,
+      "frequency": "monthly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "Guaranteed monthly pension of ₹3000 after 60 years of age",
+        "hi": "60 वर्ष की आयु के बाद ₹3000 की गारंटीकृत मासिक पेंशन"
+      }
+    },
+    "documents_required": ["aadhaar", "bank_account", "mobile_number"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Visit nearest CSC with Aadhaar and bank details",
+          "hi": "आधार और बैंक विवरण के साथ निकटतम सीएससी पर जाएं"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "1800-267-6888",
+    "website": "https://maandhan.in",
+    "launch_date": "2019-02-15",
+    "is_active": true
+  },
+  {
+    "scheme_id": "MUDRA-007",
+    "name": {
+      "en": "Pradhan Mantri MUDRA Yojana",
+      "hi": "प्रधानमंत्री मुद्रा योजना"
+    },
+    "description": {
+      "en": "Provides loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises.",
+      "hi": "गैर-कॉर्पोरेट, गैर-कृषि छोटे/सूक्ष्म उद्यमों को ₹10 लाख तक का ऋण प्रदान करता है।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["entrepreneurship", "financial_inclusion"],
+    "eligibility": {
+      "age_min": 18,
+      "occupation": ["self_employed", "other"],
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 1000000,
+      "frequency": "one-time",
+      "type": "loan",
+      "description": {
+        "en": "Collateral-free loans: Shishu (up to ₹50k), Kishore (₹50k-₹5L), Tarun (₹5L-₹10L)",
+        "hi": "संपार्श्विक मुक्त ऋण: शिशु (₹50 हज़ार तक), किशोर (₹50 हज़ार-₹5 लाख), तरुण (₹5 लाख-₹10 लाख)"
+      }
+    },
+    "documents_required": ["aadhaar", "pan_card", "business_plan", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply at any bank, NBFC, or MFI with business plan",
+          "hi": "व्यवसाय योजना के साथ किसी भी बैंक, एनबीएफसी या एमएफआई में आवेदन करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "1800-180-1111",
+    "website": "https://www.mudra.org.in",
+    "launch_date": "2015-04-08",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMUY-008",
+    "name": {
+      "en": "Pradhan Mantri Ujjwala Yojana",
+      "hi": "प्रधानमंत्री उज्ज्वला योजना"
+    },
+    "description": {
+      "en": "Free LPG connections to BPL households to ensure universal coverage of cooking gas.",
+      "hi": "खाना पकाने की गैस के सार्वभौमिक कवरेज को सुनिश्चित करने के लिए बीपीएल परिवारों को मुफ्त एलपीजी कनेक्शन।"
+    },
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "category": ["women_welfare", "social_security"],
+    "eligibility": {
+      "age_min": 18,
+      "gender": "female",
+      "bpl_card": true,
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 1600,
+      "frequency": "one-time",
+      "type": "subsidy",
+      "description": {
+        "en": "Free LPG connection worth ₹1600 with EMI facility for stove and cylinder",
+        "hi": "चूल्हे और सिलेंडर के लिए ईएमआई सुविधा के साथ ₹1600 मूल्य का मुफ्त एलपीजी कनेक्शन"
+      }
+    },
+    "documents_required": ["bpl_card", "aadhaar", "address_proof", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply at nearest LPG distributor with documents",
+          "hi": "दस्तावेजों के साथ निकटतम एलपीजी वितरक पर आवेदन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-2333-555",
+    "website": "https://www.pmujjwalayojana.com",
+    "launch_date": "2016-05-01",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMJDY-009",
+    "name": {
+      "en": "Pradhan Mantri Jan Dhan Yojana",
+      "hi": "प्रधानमंत्री जन धन योजना"
+    },
+    "description": {
+      "en": "National Mission for Financial Inclusion to ensure access to financial services like bank accounts, remittances, credit, insurance.",
+      "hi": "बैंक खाते, प्रेषण, ऋण, बीमा जैसी वित्तीय सेवाओं तक पहुंच सुनिश्चित करने के लिए वित्तीय समावेशन के लिए राष्ट्रीय मिशन।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["financial_inclusion", "social_security"],
+    "eligibility": {
+      "age_min": 10,
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": null,
+      "frequency": "ongoing",
+      "type": "service",
+      "description": {
+        "en": "Zero balance account with RuPay debit card, ₹10000 overdraft facility, accident insurance",
+        "hi": "रुपे डेबिट कार्ड के साथ शून्य शेष खाता, ₹10000 ओवरड्राफ्ट सुविधा, दुर्घटना बीमा"
+      }
+    },
+    "documents_required": ["aadhaar", "address_proof", "photograph"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Visit any bank branch with Aadhaar",
+          "hi": "आधार के साथ किसी भी बैंक शाखा में जाएं"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-11-0001",
+    "website": "https://pmjdy.gov.in",
+    "launch_date": "2014-08-28",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMFBY-010",
+    "name": {
+      "en": "Pradhan Mantri Fasal Bima Yojana",
+      "hi": "प्रधानमंत्री फसल बीमा योजना"
+    },
+    "description": {
+      "en": "Crop insurance scheme to provide insurance coverage and financial support to farmers in case of crop failure.",
+      "hi": "फसल विफलता की स्थिति में किसानों को बीमा कवरेज और वित्तीय सहायता प्रदान करने के लिए फसल बीमा योजना।"
+    },
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "category": ["agriculture", "financial_inclusion"],
+    "eligibility": {
+      "occupation": ["farmer"],
+      "states": ["all"],
+      "land_ownership": true
+    },
+    "benefits": {
+      "amount": null,
+      "frequency": "per_season",
+      "type": "insurance",
+      "description": {
+        "en": "Low premium: 2% for Kharif, 1.5% for Rabi, 5% for commercial crops. Full sum insured for crop loss.",
+        "hi": "कम प्रीमियम: खरीफ के लिए 2%, रबी के लिए 1.5%, वाणिज्यिक फसलों के लिए 5%। फसल नुकसान के लिए पूर्ण बीमा राशि।"
+      }
+    },
+    "documents_required": ["land_records", "aadhaar", "bank_account", "sowing_certificate"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply online at PMFBY portal or through bank",
+          "hi": "PMFBY पोर्टल पर ऑनलाइन या बैंक के माध्यम से आवेदन करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "1800-180-1551",
+    "website": "https://pmfby.gov.in",
+    "launch_date": "2016-02-18",
+    "is_active": true
+  },
+  {
+    "scheme_id": "NSP-011",
+    "name": {
+      "en": "National Scholarship Portal",
+      "hi": "राष्ट्रीय छात्रवृत्ति पोर्टल"
+    },
+    "description": {
+      "en": "One-stop solution for various scholarship schemes for students from pre-matric to post-graduation.",
+      "hi": "प्री-मैट्रिक से पोस्ट-ग्रेजुएशन तक छात्रों के लिए विभिन्न छात्रवृत्ति योजनाओं के लिए वन-स्टॉप समाधान।"
+    },
+    "ministry": "Ministry of Education",
+    "category": ["education", "social_security"],
+    "eligibility": {
+      "age_min": 6,
+      "age_max": 35,
+      "occupation": ["student"],
+      "states": ["all"],
+      "income_limit": 800000
+    },
+    "benefits": {
+      "amount": 50000,
+      "frequency": "yearly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "Various scholarships ranging from ₹3000 to ₹50000 per year based on category and level",
+        "hi": "श्रेणी और स्तर के आधार पर प्रति वर्ष ₹3000 से ₹50000 तक विभिन्न छात्रवृत्तियां"
+      }
+    },
+    "documents_required": ["aadhaar", "income_certificate", "caste_certificate", "marks_sheet", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Register on NSP portal with Aadhaar and educational details",
+          "hi": "आधार और शैक्षणिक विवरण के साथ एनएसपी पोर्टल पर पंजीकरण करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "0120-6619-540",
+    "website": "https://scholarships.gov.in",
+    "launch_date": "2015-01-01",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMEGP-012",
+    "name": {
+      "en": "Prime Minister's Employment Generation Programme",
+      "hi": "प्रधानमंत्री रोजगार सृजन कार्यक्रम"
+    },
+    "description": {
+      "en": "Credit-linked subsidy programme for generating employment through establishment of micro-enterprises.",
+      "hi": "सूक्ष्म उद्यमों की स्थापना के माध्यम से रोजगार सृजन के लिए ऋण से जुड़ा सब्सिडी कार्यक्रम।"
+    },
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "category": ["entrepreneurship", "employment"],
+    "eligibility": {
+      "age_min": 18,
+      "education": "8th_pass",
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 2500000,
+      "frequency": "one-time",
+      "type": "subsidy",
+      "description": {
+        "en": "15-35% subsidy on project cost up to ₹25 lakhs for manufacturing and ₹10 lakhs for service",
+        "hi": "विनिर्माण के लिए ₹25 लाख और सेवा के लिए ₹10 लाख तक की परियोजना लागत पर 15-35% सब्सिडी"
+      }
+    },
+    "documents_required": ["aadhaar", "educational_certificate", "caste_certificate", "project_report"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply online at KVIC portal with project details",
+          "hi": "परियोजना विवरण के साथ KVIC पोर्टल पर ऑनलाइन आवेदन करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "1800-11-0034",
+    "website": "https://www.kviconline.gov.in/pmegpeportal",
+    "launch_date": "2008-08-15",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMKVY-013",
+    "name": {
+      "en": "Pradhan Mantri Kaushal Vikas Yojana",
+      "hi": "प्रधानमंत्री कौशल विकास योजना"
+    },
+    "description": {
+      "en": "Skill development scheme to enable youth to take up industry-relevant skill training.",
+      "hi": "युवाओं को उद्योग-प्रासंगिक कौशल प्रशिक्षण लेने में सक्षम बनाने के लिए कौशल विकास योजना।"
+    },
+    "ministry": "Ministry of Skill Development and Entrepreneurship",
+    "category": ["skill_development", "employment"],
+    "eligibility": {
+      "age_min": 15,
+      "age_max": 45,
+      "occupation": ["student", "unemployed"],
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 8000,
+      "frequency": "one-time",
+      "type": "training",
+      "description": {
+        "en": "Free skill training with monetary reward of ₹8000 on certification",
+        "hi": "प्रमाणन पर ₹8000 के मौद्रिक पुरस्कार के साथ मुफ्त कौशल प्रशिक्षण"
+      }
+    },
+    "documents_required": ["aadhaar", "educational_certificate", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Register on PMKVY portal and select training center",
+          "hi": "PMKVY पोर्टल पर पंजीकरण करें और प्रशिक्षण केंद्र चुनें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "08800-055-555",
+    "website": "https://www.pmkvyofficial.org",
+    "launch_date": "2015-07-15",
+    "is_active": true
+  },
+  {
+    "scheme_id": "APY-014",
+    "name": {
+      "en": "Atal Pension Yojana",
+      "hi": "अटल पेंशन योजना"
+    },
+    "description": {
+      "en": "Pension scheme for unorganized sector providing guaranteed minimum pension of ₹1000 to ₹5000 per month.",
+      "hi": "असंगठित क्षेत्र के लिए पेंशन योजना जो प्रति माह ₹1000 से ₹5000 की गारंटीकृत न्यूनतम पेंशन प्रदान करती है।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["social_security", "financial_inclusion"],
+    "eligibility": {
+      "age_min": 18,
+      "age_max": 40,
+      "states": ["all"],
+      "bank_account": true
+    },
+    "benefits": {
+      "amount": 5000,
+      "frequency": "monthly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "Guaranteed pension of ₹1000-₹5000 per month after 60 years based on contribution",
+        "hi": "योगदान के आधार पर 60 वर्ष के बाद प्रति माह ₹1000-₹5000 की गारंटीकृत पेंशन"
+      }
+    },
+    "documents_required": ["aadhaar", "bank_account", "mobile_number"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Open account at any bank with Aadhaar and select pension amount",
+          "hi": "आधार के साथ किसी भी बैंक में खाता खोलें और पेंशन राशि चुनें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-110-069",
+    "website": "https://www.npscra.nsdl.co.in/atal-pension-yojana.php",
+    "launch_date": "2015-05-09",
+    "is_active": true
+  },
+  {
+    "scheme_id": "BBBP-015",
+    "name": {
+      "en": "Beti Bachao Beti Padhao",
+      "hi": "बेटी बचाओ बेटी पढ़ाओ"
+    },
+    "description": {
+      "en": "Scheme to address declining child sex ratio and promote education of girl child.",
+      "hi": "घटते बाल लिंगानुपात को संबोधित करने और बालिका शिक्षा को बढ़ावा देने के लिए योजना।"
+    },
+    "ministry": "Ministry of Women and Child Development",
+    "category": ["women_welfare", "education"],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 18,
+      "gender": "female",
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": null,
+      "frequency": "ongoing",
+      "type": "service",
+      "description": {
+        "en": "Educational support, financial assistance through linked schemes, awareness campaigns",
+        "hi": "शैक्षिक सहायता, जुड़ी योजनाओं के माध्यम से वित्तीय सहायता, जागरूकता अभियान"
+      }
+    },
+    "documents_required": ["birth_certificate", "parent_id", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Link with Sukanya Samriddhi Yojana or apply through district authorities",
+          "hi": "सुकन्या समृद्धि योजना से जुड़ें या जिला अधिकारियों के माध्यम से आवेदन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-11-1090",
+    "website": "https://wcd.nic.in/bbbp-schemes",
+    "launch_date": "2015-01-22",
+    "is_active": true
+  },
+  {
+    "scheme_id": "IGNOAPS-016",
+    "name": {
+      "en": "Indira Gandhi National Old Age Pension Scheme",
+      "hi": "इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन योजना"
+    },
+    "description": {
+      "en": "Monthly pension for elderly people living below poverty line.",
+      "hi": "गरीबी रेखा से नीचे रहने वाले वृद्ध लोगों के लिए मासिक पेंशन।"
+    },
+    "ministry": "Ministry of Rural Development",
+    "category": ["senior_citizen", "social_security"],
+    "eligibility": {
+      "age_min": 60,
+      "income_limit": 0,
+      "bpl_card": true,
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 500,
+      "frequency": "monthly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "₹200-500 per month for 60-79 years, ₹500-1000 for 80+ years (varies by state)",
+        "hi": "60-79 वर्ष के लिए प्रति माह ₹200-500, 80+ वर्ष के लिए ₹500-1000 (राज्य के अनुसार भिन्न)"
+      }
+    },
+    "documents_required": ["age_proof", "bpl_card", "aadhaar", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply through Gram Panchayat or Municipal office",
+          "hi": "ग्राम पंचायत या नगर निगम कार्यालय के माध्यम से आवेदन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-110-004",
+    "website": "https://nsap.nic.in",
+    "launch_date": "2007-11-15",
+    "is_active": true
+  },
+  {
+    "scheme_id": "IGNWPS-017",
+    "name": {
+      "en": "Indira Gandhi National Widow Pension Scheme",
+      "hi": "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना"
+    },
+    "description": {
+      "en": "Monthly pension for widows living below poverty line.",
+      "hi": "गरीबी रेखा से नीचे रहने वाली विधवाओं के लिए मासिक पेंशन।"
+    },
+    "ministry": "Ministry of Rural Development",
+    "category": ["women_welfare", "social_security"],
+    "eligibility": {
+      "age_min": 40,
+      "age_max": 59,
+      "gender": "female",
+      "marital_status": "widowed",
+      "bpl_card": true,
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 300,
+      "frequency": "monthly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "₹300 per month (central) + state contribution",
+        "hi": "प्रति माह ₹300 (केंद्रीय) + राज्य योगदान"
+      }
+    },
+    "documents_required": ["death_certificate_husband", "bpl_card", "aadhaar", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply through Gram Panchayat with required documents",
+          "hi": "आवश्यक दस्तावेजों के साथ ग्राम पंचायत के माध्यम से आवेदन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-110-004",
+    "website": "https://nsap.nic.in",
+    "launch_date": "2009-02-01",
+    "is_active": true
+  },
+  {
+    "scheme_id": "IGNDPS-018",
+    "name": {
+      "en": "Indira Gandhi National Disability Pension Scheme",
+      "hi": "इंदिरा गांधी राष्ट्रीय विकलांगता पेंशन योजना"
+    },
+    "description": {
+      "en": "Monthly pension for persons with disabilities living below poverty line.",
+      "hi": "गरीबी रेखा से नीचे रहने वाले विकलांग व्यक्तियों के लिए मासिक पेंशन।"
+    },
+    "ministry": "Ministry of Rural Development",
+    "category": ["disability", "social_security"],
+    "eligibility": {
+      "age_min": 18,
+      "age_max": 59,
+      "disability": true,
+      "disability_percentage": 80,
+      "bpl_card": true,
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 300,
+      "frequency": "monthly",
+      "type": "direct_transfer",
+      "description": {
+        "en": "₹300 per month (central) + state contribution for 80%+ disability",
+        "hi": "80%+ विकलांगता के लिए प्रति माह ₹300 (केंद्रीय) + राज्य योगदान"
+      }
+    },
+    "documents_required": ["disability_certificate", "bpl_card", "aadhaar", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply through Gram Panchayat with disability certificate",
+          "hi": "विकलांगता प्रमाण पत्र के साथ ग्राम पंचायत के माध्यम से आवेदन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-110-004",
+    "website": "https://nsap.nic.in",
+    "launch_date": "2009-02-01",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMJJBY-019",
+    "name": {
+      "en": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+      "hi": "प्रधानमंत्री जीवन ज्योति बीमा योजना"
+    },
+    "description": {
+      "en": "Life insurance scheme offering ₹2 lakh coverage at affordable premium.",
+      "hi": "किफायती प्रीमियम पर ₹2 लाख कवरेज प्रदान करने वाली जीवन बीमा योजना।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["social_security", "financial_inclusion"],
+    "eligibility": {
+      "age_min": 18,
+      "age_max": 50,
+      "states": ["all"],
+      "bank_account": true
+    },
+    "benefits": {
+      "amount": 200000,
+      "frequency": "on_death",
+      "type": "insurance",
+      "description": {
+        "en": "₹2 lakh life cover for only ₹436 per year premium",
+        "hi": "केवल ₹436 प्रति वर्ष प्रीमियम पर ₹2 लाख जीवन कवर"
+      }
+    },
+    "documents_required": ["aadhaar", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Enroll through your bank by giving consent and premium auto-debit",
+          "hi": "सहमति और प्रीमियम ऑटो-डेबिट देकर अपने बैंक के माध्यम से नामांकन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-180-1111",
+    "website": "https://www.jansuraksha.gov.in",
+    "launch_date": "2015-05-09",
+    "is_active": true
+  },
+  {
+    "scheme_id": "PMSBY-020",
+    "name": {
+      "en": "Pradhan Mantri Suraksha Bima Yojana",
+      "hi": "प्रधानमंत्री सुरक्षा बीमा योजना"
+    },
+    "description": {
+      "en": "Accident insurance scheme providing ₹2 lakh coverage for accidental death and disability.",
+      "hi": "दुर्घटना मृत्यु और विकलांगता के लिए ₹2 लाख कवरेज प्रदान करने वाली दुर्घटना बीमा योजना।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["social_security", "financial_inclusion"],
+    "eligibility": {
+      "age_min": 18,
+      "age_max": 70,
+      "states": ["all"],
+      "bank_account": true
+    },
+    "benefits": {
+      "amount": 200000,
+      "frequency": "on_accident",
+      "type": "insurance",
+      "description": {
+        "en": "₹2 lakh for accidental death, ₹1 lakh for partial disability for only ₹20 per year",
+        "hi": "केवल ₹20 प्रति वर्ष में दुर्घटना मृत्यु के लिए ₹2 लाख, आंशिक विकलांगता के लिए ₹1 लाख"
+      }
+    },
+    "documents_required": ["aadhaar", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Enroll through bank with auto-debit consent",
+          "hi": "ऑटो-डेबिट सहमति के साथ बैंक के माध्यम से नामांकन करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-180-1111",
+    "website": "https://www.jansuraksha.gov.in",
+    "launch_date": "2015-05-09",
+    "is_active": true
+  },
+  {
+    "scheme_id": "STAND-UP-INDIA-021",
+    "name": {
+      "en": "Stand-Up India Scheme",
+      "hi": "स्टैंड-अप इंडिया योजना"
+    },
+    "description": {
+      "en": "Facilitating bank loans for SC/ST and women entrepreneurs for setting up greenfield enterprises.",
+      "hi": "ग्रीनफील्ड उद्यम स्थापित करने के लिए एससी/एसटी और महिला उद्यमियों के लिए बैंक ऋण की सुविधा।"
+    },
+    "ministry": "Ministry of Finance",
+    "category": ["entrepreneurship", "women_welfare"],
+    "eligibility": {
+      "age_min": 18,
+      "gender": "female",
+      "category": ["SC", "ST"],
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 10000000,
+      "frequency": "one-time",
+      "type": "loan",
+      "description": {
+        "en": "Loans between ₹10 lakh to ₹1 crore for manufacturing, services, or trading sector",
+        "hi": "विनिर्माण, सेवा या व्यापार क्षेत्र के लिए ₹10 लाख से ₹1 करोड़ के बीच ऋण"
+      }
+    },
+    "documents_required": ["aadhaar", "caste_certificate", "business_plan", "pan_card"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Apply through Stand-Up India portal or any bank branch",
+          "hi": "स्टैंड-अप इंडिया पोर्टल या किसी भी बैंक शाखा के माध्यम से आवेदन करें"
+        },
+        "online": true
+      }
+    ],
+    "helpline": "1800-180-1111",
+    "website": "https://www.standupmitra.in",
+    "launch_date": "2016-04-05",
+    "is_active": true
+  },
+  {
+    "scheme_id": "SAMARTH-022",
+    "name": {
+      "en": "SAMARTH - Scheme for Capacity Building in Textile Sector",
+      "hi": "समर्थ - वस्त्र क्षेत्र में क्षमता निर्माण योजना"
+    },
+    "description": {
+      "en": "Skill development scheme for textile and related sectors providing training and employment.",
+      "hi": "वस्त्र और संबंधित क्षेत्रों के लिए कौशल विकास योजना जो प्रशिक्षण और रोजगार प्रदान करती है।"
+    },
+    "ministry": "Ministry of Textiles",
+    "category": ["skill_development", "employment"],
+    "eligibility": {
+      "age_min": 14,
+      "age_max": 45,
+      "occupation": ["student", "unemployed"],
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": 7500,
+      "frequency": "one-time",
+      "type": "training",
+      "description": {
+        "en": "Free training with stipend, placement assistance, and ₹7500 post-placement incentive",
+        "hi": "वजीफा के साथ मुफ्त प्रशिक्षण, प्लेसमेंट सहायता, और ₹7500 नियुक्ति के बाद प्रोत्साहन"
+      }
+    },
+    "documents_required": ["aadhaar", "educational_certificate", "bank_account"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Register at authorized training partner",
+          "hi": "अधिकृत प्रशिक्षण भागीदार पर पंजीकरण करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-103-9314",
+    "website": "https://texmin.nic.in/samarth",
+    "launch_date": "2017-12-20",
+    "is_active": true
+  },
+  {
+    "scheme_id": "POSHAN-ABHIYAAN-023",
+    "name": {
+      "en": "POSHAN Abhiyaan (National Nutrition Mission)",
+      "hi": "पोषण अभियान (राष्ट्रीय पोषण मिशन)"
+    },
+    "description": {
+      "en": "Holistic approach to address malnutrition among children, pregnant women, and lactating mothers.",
+      "hi": "बच्चों, गर्भवती महिलाओं और स्तनपान कराने वाली माताओं में कुपोषण को दूर करने के लिए समग्र दृष्टिकोण।"
+    },
+    "ministry": "Ministry of Women and Child Development",
+    "category": ["women_welfare", "healthcare"],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 6,
+      "states": ["all"]
+    },
+    "benefits": {
+      "amount": null,
+      "frequency": "ongoing",
+      "type": "service",
+      "description": {
+        "en": "Nutrition supplementation, growth monitoring, health checkups, awareness programs",
+        "hi": "पोषण पूरकता, वृद्धि निगरानी, स्वास्थ्य जांच, जागरूकता कार्यक्रम"
+      }
+    },
+    "documents_required": ["aadhaar", "mother_child_health_card"],
+    "application_process": [
+      {
+        "step_number": 1,
+        "description": {
+          "en": "Register at nearest Anganwadi center",
+          "hi": "निकटतम आंगनवाड़ी केंद्र में पंजीकरण करें"
+        },
+        "online": false
+      }
+    ],
+    "helpline": "1800-120-0150",
+    "website": "https://poshanabhiyaan.gov.in",
+    "launch_date": "2018-03-08",
+    "is_active": true
+  }
+]
