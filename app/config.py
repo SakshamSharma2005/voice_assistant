@@ -1,4 +1,5 @@
 from pydantic_settings import BaseSettings
+from pydantic import Field
 from typing import List
 import os
 
@@ -14,7 +15,7 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "Government Scheme Navigator API"
     
     # Google Gemini API
-    GEMINI_API_KEY: str
+    GEMINI_API_KEY: str = Field(default="")
     GEMINI_MODEL: str = "gemini-pro"
     
     # Google Cloud Credentials
@@ -75,7 +76,9 @@ class Settings(BaseSettings):
     
     class Config:
         env_file = ".env"
+        env_file_encoding = "utf-8"
         case_sensitive = True
+        extra = "ignore"
 
 
 # Initialize settings
